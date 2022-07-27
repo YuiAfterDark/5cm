@@ -1,0 +1,88 @@
+/* Dark Mode by Shishio-kun
+https://myanimelist.net/forum/?topicid=1862835 */
+
+body::before {
+	background: rgba(5,5,5,.5);
+}
+
+a { color: white; }
+
+.manga .list-menu-float .icon-menu.manga-list .text,
+.manga .list-menu-float .icon-menu.manga-list:hover {
+	background-color: transparent;
+}
+
+.status-menu-container .status-menu .status-button.on {
+	color: black;
+}
+
+.list-table .list-table-header .header-title .link.sort:hover {
+	color: grey;
+}
+
+/* This at the bottom should fix the tags */
+
+.data.tags span,
+.data.tags span a,
+.list-table .list-table-data .data.tags,
+.list-table .list-table-data .data.tags a{
+text-transform: none !important;
+}
+#header-menu-button, .anime .list-menu-float .icon-menu.anime-list, .anime .list-menu-float .icon-menu.anime-list svg, .anime .list-menu-float .icon-menu.anime-list .text, .anime .list-menu-float .icon-menu.anime-list:hover, .manga .list-menu-float .icon-menu.manga-list, .manga .list-menu-float .icon-menu.manga-list svg, .manga .list-menu-float .icon-menu.manga-list .text, .manga .list-menu-float .icon-menu.manga-list:hover {
+  background-color: transparent;}
+.status-menu-container {
+  background-color: #333;}
+.status-menu-container {
+  border-bottom: 0;}
+.list-table {
+    border: 0;
+}
+.list-table > tbody:nth-of-type(2n+1) {
+    background-color: transparent;
+}
+.list-table .list-table-data .data {
+    border-bottom: 0;
+}
+.list-table .list-table-header .header-title {
+    background: rgba(5,5,5,.5);
+}
+            
+.list-table .list-table-header .header-title, .list-table .list-table-header .header-title .link.sort, .list-table .list-table-header .header-title .link.sort:hover {
+    color: #9B9B9B;
+}
+.list-table .list-table-header .header-title .link {
+    color: #9B9B9B;
+}
+.list-table .list-table-header .header-title:hover, .list-table .list-table-header .header-title .link.sort:hover, .list-table .list-table-header .header-title .link.sort:hover {
+    color: white;
+}
+.list-table .list-table-header .header-title .link:hover {
+    color: white;
+}
+.status-menu-container .status-menu .status-button.on {
+    color: black;
+}
+.list-table .list-table-data a.edit-disabled {
+ 
+    color: white;
+}
+.list-table .list-table-header .header-title {
+ 
+    border-bottom: 0;}
+    
+    
+#header-menu-button, .anime .list-menu-float .icon-menu.anime-list, .anime .list-menu-float .icon-menu.anime-list svg, .anime .list-menu-float .icon-menu.anime-list .text, .anime .list-menu-float .icon-menu.anime-list:hover, .manga .list-menu-float .icon-menu.manga-list, .manga .list-menu-float .icon-menu.manga-list svg, .manga .list-menu-float .icon-menu.manga-list .text, .manga .list-menu-float .icon-menu.manga-list:hover {
+background-color: #333;
+    color: white !important;
+    fill: white;
+}
+.status-menu-container .status-menu .status-button.on {
+    color: white;
+}
+.status-menu-container .status-menu .status-button:hover{
+ color: white; 
+}
+.header a, .header .header-menu .list-menu .icon-menu{
+  background: #333;
+  
+}
