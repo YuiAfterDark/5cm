@@ -1,0 +1,41 @@
+/* Custom Height */
+
+:root {
+	--list-top-spacing: 4vh;
+	--list-height: 94vh - 90px;
+}
+
+body {
+  padding-top: calc( var(--list-top-spacing) );
+}
+
+body::before,
+body::after {
+	top: calc( var(--list-top-spacing) );
+	height: calc( var(--list-height) );
+}
+
+.header {
+	height: calc( var(--list-top-spacing) );
+}
+
+.header .header-title {
+	top: calc( var(--list-top-spacing) );
+}
+
+.header .header-menu.other {
+	top: calc( var(--list-top-spacing) + 50px );
+}
+
+.list-unit {
+	padding-bottom: calc( 100vh - ( var(--list-height) + var(--list-top-spacing) ) );
+}
+
+.status-menu-container, .status-menu-container.fixed {
+	top: calc( var(--list-top-spacing) );
+}
+
+footer {
+	top:  calc( var(--list-height) + var(--list-top-spacing) );
+	height: calc( 100% - ( var(--list-height) + var(--list-top-spacing) ) );
+}
