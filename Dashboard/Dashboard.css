@@ -1,10 +1,40 @@
-/* List design by 5cm */
+/* "Dashboard"
+ * List design by 5cm
+ * Modified by Valerio Lyndon
+ * Original date: 2020-JUL-28
+ * Revision date: 2020-AUG-09
+ */
 
 @\import "https://fonts.googleapis.com/css?family=Source+Sans+Pro";
 
+:root {
+  --background: url(https://i.postimg.cc/JzHSb7Kg/opacity.png), fixed center/cover url(https://i.postimg.cc/Ytj7rMNQ/background.jpg)
+}
+
 body {
-  background: url(https://i.postimg.cc/JzHSb7Kg/opacity.png), fixed center/cover url(https://i.postimg.cc/Ytj7rMNQ/background.jpg)!important;
-  width: 1058px; margin: auto; font: 11px Source Sans Pro; letter-spacing: 1px; text-transform: uppercase;}
+  background: var(--background) !important;
+  width: 1058px; font: 11px Source Sans Pro; letter-spacing: 1px; text-transform: uppercase;
+  padding: 70px 0 0;
+  margin: auto;
+}
+ 
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 68px;
+  left: calc(50% - 529px);
+  width: 1058px;
+  height: 541px;
+  border-radius: 10px;
+  pointer-events: none;
+} body::before {
+  z-index: 60;
+  background: linear-gradient(to right, #333 160px, #fff 160px);
+} body::after {
+  z-index: 110;
+  box-shadow: 0 8px 20px rgba(0,0,0,.6);
+}
 
 a {color: black;}
 
@@ -12,6 +42,14 @@ a {color: black;}
 .list-menu-float .icon-menu.setting svg.icon-setting, .list-unit .list-status-title .text, #show-stats-button,
 .list-unit:not(.all_anime) .status, .icon-watch.ml4,[data-owner=""] .add-edit-more span, .more,
 .list-table .list-table-data .tags .edit, .list-unit:not(.watching) .icon-add-episode {display: none;}
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 68px;
+  z-index: 100;
+  background: var(--background);
+}
 
 .header .header-title {background: #333 15px 2px/50px no-repeat url(https://i.postimg.cc/sx2N13vT/logo.png);
   width: 160px; height: 50px; top: 68px; z-index: 2; border-radius: 10px 0 0; border-bottom: 1px solid #555;}
@@ -28,7 +66,7 @@ a {color: black;}
 .anime .list-menu-float .icon-menu.anime-list .text, .anime .list-menu-float .icon-menu.anime-list:hover,
 .manga .list-menu-float .icon-menu.manga-list, .manga .list-menu-float .icon-menu.manga-list svg,
 .manga .list-menu-float .icon-menu.manga-list .text, .manga .list-menu-float .icon-menu.manga-list:hover {
-  background-color: white; color: #333; fill: #333;}
+  background-color: white; color: #333 !important; fill: #333;}
 
 #header-menu-button:before {content: ''; display: inline-block; width: 13px; height: 12px; margin: 0 10px 0 20px;}
 .anime #header-menu-button:before {background: left/cover url(https://s6.postimg.cc/46qmpa1m9/blackanime.png);}
@@ -55,8 +93,11 @@ a {color: black;}
 .header a, .header a.username:after, .list-menu-float .icon-menu.profile:after {
   content: 'Profile'; font: bold 11px Source Sans Pro; color: #999!important; line-height: 50px; letter-spacing: 2px;}
 
-.header a:not(.header-title):hover, .header .header-menu .list-menu .icon-menu:hover, .list-menu-float .icon-menu.profile:hover {
-  background #222; color: white; text-decoration: none;}
+.header a:not(.header-title):hover,
+.header a:not(.header-title):hover::before,
+.header a:not(.header-title):hover::after,
+.header .header-menu .list-menu .icon-menu:hover, .list-menu-float .icon-menu.profile:hover {
+  background: #222; color: white !important; text-decoration: none;}
 
 .header a.username, .header-info [href*=register], .list-menu-float .icon-menu.setting .text .link-style-setting {
   font-size: 0; letter-spacing: 0;}
@@ -72,7 +113,12 @@ a {color: black;}
 .header .header-menu .list-menu .icon-menu svg.icon, .list-menu-float .icon-menu svg.icon {
   width: 15px; fill: #999; top: 15px!important; left: 20px!important;}
 
-.list-menu-float {position: relative; top: 50px; left: 0; width: 160px; border: 0;}
+.list-menu-float {
+  position: fixed;
+  top: 120px;
+  left: calc(50% - 529px); width: 160px; border: 0;
+  z-index: 80;
+}
 
 .list-menu-float .icon-menu {background: #333; width: 100%; transition: none;}
 
@@ -99,6 +145,16 @@ a {color: black;}
 .list-menu-float .icon-menu.setting .text .link-style-setting:hover {
   background: #222; width: 100%; color: white;}
 
+.list-menu-float .icon-menu.profile:hover {
+  background: #222;
+  color: white;
+}
+
+.list-menu-float .icon-menu.profile:hover::before,
+.list-menu-float .icon-menu.profile:hover::after {
+  color: white !important;
+}
+
 .list-menu-float .icon-menu.profile:hover:before, .list-menu-float .icon-menu.setting .text .link-list-setting:hover:before,
 .list-menu-float .icon-menu.profile:hover:after, .list-menu-float .icon-menu:hover .text {width: auto; color: white;}
 
@@ -113,19 +169,37 @@ a {color: black;}
 .list-menu-float .icon-menu.setting .text .link-style-setting:before {
   content: '\f1fc'; font: 14px FontAwesome; color: #999; position: absolute; margin: 17px 21px;}
 
-.list-container {border-radius: 10px; margin-top: -352px; z-index: 1;
-  background: #333; border: 0; box-shadow: 0 8px 20px rgba(0,0,0,.6);}
+.list-container {
+  margin-top: -2px;
+  z-index: 70;
+  padding-top: 51px;
+  background: none;
+  border: 0;}
 
 [data-owner=""] .list-container {margin-top: -2px;}
 
 .list-block, .status-menu-container.fixed + div.list-block {margin: 0; min-height: auto;}
 
-.list-unit {width: auto; height: 450px; margin-left: 160px; padding: 10px 30px 30px;
-  background: white; overflow: auto; border-radius: 0 0 10px;}
+.list-unit {
+  width: auto;
+  margin-left: 160px;
+  padding: 10px 30px calc(100vh - 609px);
+  background: none; border-radius: 0 0 10px;}
 
-.status-menu-container, .status-menu-container.fixed {position: static; height: 50px; border-radius: 10px 10px 0;}
+.status-menu-container, .status-menu-container.fixed {
+  position: fixed;
+  top: 68px;
+  left: calc(50% - 369px);
+  width: 898px;
+  height: 50px;
+  border-radius: 0 10px 0 0;
+}
 
-.status-menu-container .status-menu {height: 100%; margin-left: 160px; border-spacing: 36px 0;}
+.status-menu-container .status-menu {
+  height: 100%;
+  margin-left: 0;
+  border-spacing: 36px 0;
+}
 
 .status-menu-container .status-menu .status-button {font: bold 11px Source Sans Pro; letter-spacing: 2px;}
 
@@ -175,6 +249,16 @@ a {color: black;}
 .add a, .edit a, .list-table .list-table-data .data.tags {font-size: 8px; line-height:1em;}
 
 .list-unit .loading-space {margin: 5px;}
+
+footer {
+  position: fixed;
+  top: 609px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: calc(100% - 609px);
+  background: var(--background);
+}
 
 #footer-block {background: none; padding: 20px;}
 
