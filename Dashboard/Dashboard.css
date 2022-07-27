@@ -2,13 +2,14 @@
  * List design by 5cm
  * Modified by Valerio Lyndon
  * Original date: 2020-JUL-28
- * Revision date: 2020-AUG-09
+ * Revision date: 2022-JUN-22
  */
 
 @\import "https://fonts.googleapis.com/css?family=Source+Sans+Pro";
 
 :root {
-  --background: url(https://i.postimg.cc/JzHSb7Kg/opacity.png), fixed center/cover url(https://i.postimg.cc/Ytj7rMNQ/background.jpg)
+	--tint: rgba(0,0,0,.265);
+	--background: linear-gradient(var(--tint),var(--tint)), fixed center/cover url(https://i.postimg.cc/Ytj7rMNQ/background.jpg);
 }
 
 body {
