@@ -1,0 +1,124 @@
+
+/*        List design by 5cm         Inspiration from SolitarySetsuna */
+/*     Render by ElysionsGarden       Background by Adrian Pelletier  */
+/* https://myanimelist.net/forum/?topicid=1099375&show=350#msg57006432 */
+@\import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,800";
+@\import "https://malscraper.azurewebsites.net/covers/auto/presets/datatitlebefore";
+body {
+  background: #dfd1e0 repeat-x center/contain fixed
+    url(https://image.myanimelist.net/ui/fkLITaJTefafxFKPGRzngtEQrJsgH6ZcWACcraNYdFaj6awlwd5NVw4l1RHz4T-_)!important;
+  font: 11px Open Sans; color: #ccc; letter-spacing: 1px; text-transform: uppercase;}
+.header .header-title, .header .header-menu, .header .header-info, #header-menu-button,
+i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, #cover-image-container,
+.status-menu-container .status-menu .status-button::after, .status-menu-container .search-container,
+.list-unit .list-status-title .stats, .list-table .list-table-header .header-title.image,
+.list-table .list-table-data .data.image, .icon-watch.ml4, .more,
+.list-table .list-table-data .tags .edit {
+  display: none;}
+.header {
+  position: fixed; width: 300px; height: 480px; left: calc(50% + 250px); top: 100px; z-index: 1;}
+.header:before {
+  content: url(https://image.myanimelist.net/ui/fkLITaJTefafxFKPGRzngugMyEX13ps3hq4aKHOIBB5ZXXYjF4jsNJpR0LzOs4Yn);
+  display: block; text-align: right;}
+.header .header-menu.other {
+  display: block; top: unset; bottom: 98px; left: -10px;}
+.header .header-menu .btn-menu {
+  font-size: 0; text-align: center;}
+.header a.username {
+  background: center/150px url(https://image.myanimelist.net/ui/uDqA5Hj63XC4_7-Zz2-uStdYe5Qg1UiBTLljp3L1u-Q);
+  font: 800 20px Open Sans; color: rgba(255,255,255,.7); letter-spacing: 2px; padding: 5px 0;}
+.list-menu-float {
+  top: 450px; left: calc(50% + 250px); width: 300px; border: 0; z-index: 1;}
+.icon-menu.profile {
+  background: url(none)!important; display: inline-block; width: auto; height: auto;}
+.icon-menu.profile:after {content: attr(href);
+  background: center/120px url(https://image.myanimelist.net/ui/uDqA5Hj63XC4_7-Zz2-uStdYe5Qg1UiBTLljp3L1u-Q);
+  font: 800 20px Open Sans; color: rgba(255,255,255,.7); letter-spacing: 2px; padding: 5px;
+  display: inline-block; white-space: nowrap; text-indent: -443px; overflow: hidden;}
+.icon-menu.profile:hover:after, .header a:hover,
+.list-table .list-table-data a:not(.edit-disabled):hover,
+.status-menu-container .status-menu .status-button:not(.on):hover {
+  color: white; text-decoration: none;}
+.list-container {
+  width: 1000px; top: 100px; background: none!important; border: 0;}
+#status-menu {
+  position: fixed; width: auto; height: 0; top: 495px; left: calc(50% + 300px); border: 0}
+#status-menu .status-menu {
+  display: flex; flex-flow: column; align-items: center;}
+.status-menu-container .status-menu .status-button {
+  order: 2; width: 170px; background: rgba(255,255,255,.2); padding: 2px 0;
+  font: bold 11px Open Sans; color: rgba(67,72,104,.7); transition: all .2s ease-in-out;}
+.status-menu-container .status-menu .status-button.on {order: 1;
+  background: rgba(92,99,145,.2); color: #e8e8e8!important;
+  padding: 10px; border-radius: 20px; border: 1px solid #e8e8e8;}
+.status-menu-container .status-menu .status-button:not(.on) {
+  margin-top: -16px; opacity: 0;}
+.status-menu-container .status-menu:hover .status-button:not(.on),
+.list-block, .status-menu-container.fixed + div.list-block {
+  margin: 0; opacity: 1;}
+.list-unit {
+  width: 600px; margin-left: 60px;}
+.list-unit .list-status-title {
+  background: none; width: 600px; position: absolute; top: -12px;}
+.list-unit .list-status-title .text {
+  font: 800 25px Open Sans; color: rgba(255,255,255,.6); letter-spacing: 3px; text-align: left;}
+.list-table {
+  border: 0; border-collapse: separate; border-spacing: 0 2px;}
+.list-table > tbody:nth-of-type(2n+1):first-child, .list-table .list-table-header .header-title {
+  background: none; border: 0; height: 18px;}
+.list-item, .list-table > tbody:nth-of-type(2n+1) {
+  background: rgba(0,0,0,.2);}
+.list-table .list-table-header .header-title.title {
+  visibility: hidden;}
+.list-table .list-table-header .header-title .link.sort, .list-table .list-table-data .data a,
+.list-table .list-table-data a.edit-disabled {
+  color: #ccc!important;}
+.list-table .list-table-data .data {
+  height: 30px; border: 0;}
+.list-table .list-table-data:hover {
+  background: rgba(0,0,0,.1);}
+.list-table .list-table-data .data.status {
+  background: none!important; font: 13px FontAwesome; padding: 0 5px;}
+.data.status.watching:before {
+  content: '\f005';}
+.data.status.completed:before {
+  content: '\f058';}
+.data.status.onhold:before {
+  content: '\f06a'}
+.data.status.dropped:before {
+  content: '\f05e'}
+.data.status.plantowatch:before {
+  content: '\f017';}
+.data.image ~ .data.title .link:before {
+  content: ''; position: absolute; display: block; left: -80px; margin-top: -80px;
+  width: 120px; height: 180px; background-size: cover; background-position: center;
+  border-radius: 7px; box-shadow: 0px 4px 10px rgba(0,0,0,.4); opacity: 0; z-index: -1;
+  transition: all .5s ease-in-out;}
+.list-table-data:hover .data.title .link:before {
+  opacity: .8;}
+.list-table .list-table-header .header-title.number {
+  position: absolute; visibility: hidden;}
+.list-table .list-table-data .data.number {
+  position: absolute; left: 12px; margin-top: 3px; font: 800 19px Open Sans; letter-spacing: 0;
+  color: rgba(0,0,0,.3); text-align: right; width: 40px; z-index: -2;}
+.data.number ~ .data.title .link:before {
+  left: -100px;}
+.list-table .list-table-data .data.title {
+  padding-left: 0;}
+.list-table .list-table-data .data.title .link {
+  font-size: 1em; line-height: 1em; color: white!important; display: inline-block;
+  max-width: 270px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.content-status {
+  background: rgba(0,0,0,.2); padding: 1px 0 2px 4px;
+  border-radius: 10px; position: relative; top: -1px;}
+.list-table .list-table-data .data.title .add-edit-more {
+  float: none; display: inline; font-size: 0; line-height: 0; opacity: 0;
+  position: relative; top: -2px; left: 3px;}
+.list-table-data:hover .data.title .add-edit-more {
+  opacity: 1;}
+.add, .edit, .data.tags {
+  font-size: 8px; line-height: 1em;}
+#footer-block {
+  background: none; position: relative; top: 90px;}
+#copyright {
+  font: 8px Open Sans; color: rgba(0,0,0,.6)}
