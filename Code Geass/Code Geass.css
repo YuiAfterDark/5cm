@@ -1,10 +1,12 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg56737210 */
+/* Layout modified by Valerio Lyndon, please direct any issues to V.L instead of 5cm. */
+/* Last modified: 2022-Jul-28 */
 @\import "https://fonts.googleapis.com/css?family=Crushed";
-@\import "https://malscraper.azurewebsites.net/covers/auto/presets/animetitlebefore"; 
+@\import "https://malscraper.azurewebsites.net/covers/auto/presets/animetitlebefore";
 body {
-    background: fixed center/cover url(https://image.myanimelist.net/ui/MikJJN8srvMi3e07pcbwvedTLiFKKhWrDNhyKB56wgZq7anqcIElpwzpi8ND9mDsWFXnsDiH98QxGL69yeJw7PqKU8YWG_SDOSCvVLH5Edk),
-        url(https://image.myanimelist.net/ui/kDN9kIrC11wGXYyu9EsTXB_LUIogaGWkHY3wxVesSd0OP25RJgvh8q2voAv7hXm86-y863MbFrOxq7wIZixIjg);
+    background: fixed center/cover url(https://i.imgur.com/aebBxr6.png),
+        url(https://i.imgur.com/jvIfoCT.gif);
     background-color: black; font: 15px Crushed; color: #999; letter-spacing: 1px; text-transform: uppercase;}
 a, a:visited, a:active {
     color: #999; text-decoration: none;}
@@ -35,7 +37,9 @@ a, a:visited, a:active {
 #list_surround:before {
     content: ''; display: block!important; width: 400px; height: 250px;
     position: absolute; z-index: 2; left: calc(50% - 670px); top: -20px;
-     background: 30% 0/cover url(https://image.myanimelist.net/ui/pb4UouHJVvG8J7S3rGpWtI0a0U_fTuhy7DNdVuRSWGnI75epCOKH64LFk3ylPXkPDueT6OWGSeBiQ84Pt9sCwg);}
+     background: 30% 0/cover url(https://i.imgur.com/fbh44gb.png);
+	pointer-events: none;
+}
 #inlineContent {
     display: block!important; width: 200px; height: 100%; background: rgba(38,103,36,.6);
     position: fixed; z-index: 1; left: calc(50% - 510px); top: 0;}
@@ -89,4 +93,10 @@ a + small {
 #copyright:before {
     content: ''; width: 370px; height: 260px;
     position: absolute; left: calc(50% - 670px); top: -200px; z-index: 2;
-    background: right top/cover url(https://image.myanimelist.net/ui/58icZI61WMtl2MoT2tcEF9qLiT2C4I9qqacrZhiEzGlEZLHlnm7tqWT2JZ04mvvliymtrQW3UNCik_24Ye2i9Ui_jwLOZput2igv5nAAPVk);}
+    background: right top/cover url(https://i.imgur.com/e1OCnfs.png);
+	pointer-events: none;
+}
+
+#recaptcha-terms {
+    display: none;
+}
