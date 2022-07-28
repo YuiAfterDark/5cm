@@ -1,10 +1,12 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=393503&show=250#msg50423223 */
+/* Modified by Valerio_Lyndon */
+/* Last modified: 2022-JUL-28 */
 
-@\import "//db.onlinewebfonts.com/c/d2c52a64cb362f280d891dd4980160e5?family=Edo";
+@\import "https://dl.dropboxusercontent.com/s/n4qu6y6gwet3hi3/edo.css";
 body {
 	background: #b5c2d5 /* image by Yuwanda | http://yuwa23.deviantart.com */ 50% -15px no-repeat
-	url(http://img07.deviantart.net/9811/i/2014/203/5/f/_barakamon__fun__by_yuwa23-d7rugat.png);
+	url(https://i.imgur.com/oHOiB3O.png);
 	color: #666; font: 16px calibri;}
 a:link, a:visited, a:active {
 	color: white; text-decoration: none;}
@@ -79,3 +81,6 @@ small a.List_LightBox {
 #copyright {
 	background: white; color: #e8754e; line-height: 40px; text-transform: uppercase;
 	position: absolute; left: 0; width: 100%;}
+#recaptcha-terms {
+	display: none;
+}
