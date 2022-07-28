@@ -1,0 +1,14 @@
+/*
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+*/
+@font-face {
+	font-family: "Whitestone";
+	src: url("https://dl.dropboxusercontent.com/s/mdoajmvmtp9j4qj/Whitestone.woff2") format("woff2"),
+	     url("https://dl.dropboxusercontent.com/s/w55e6vg4s91jhny/Whitestone.woff") format("woff"),
+	     url("https://dl.dropboxusercontent.com/s/axl5p5evp5w88bt/Whitestone.otf") format("opentype"),
+	     url("https://dl.dropboxusercontent.com/s/qslj1kbstl29l2e/Whitestone.svg#Whitestone") format("svg");
+}

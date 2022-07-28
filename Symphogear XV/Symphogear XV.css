@@ -1,13 +1,6 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58675479 */
-@\import url(//db.onlinewebfonts.com/c/935bfbf1ceff732132b87273b9a85be1?family=Whitestone);
-@font-face {font-family: "Whitestone";
-    src: url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.eot");
-    src: url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.svg#Whitestone") format("svg"); } 
+@\import "https://dl.dropboxusercontent.com/s/k1l6auq26iqc0hr/Whitestone.css";
 body {
     background: #0f2d73 0 30% / cover fixed url(https://a.wattpad.com/userbg/AnnelieLeddy.69497.jpg);
     font: 14px calibri; color: white;}
@@ -106,3 +99,12 @@ tr:hover a + small {
 #copyright {
     position: absolute; top: 946px; left: -310px; width: 280px; padding: 10px;
     background: rgba(0,0,0,0.5); font-size: 12px; color: #bbb;}
+
+/* 2022 Updates by Valerio Lyndon */
+#recaptcha-terms {
+	display: none;
+}
+#copyright::after {
+	content: "\a Whitestone font © Neale Davidson.\a List design by 5cm.";
+	white-space: pre;
+}
