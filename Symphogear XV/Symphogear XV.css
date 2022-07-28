@@ -1,0 +1,108 @@
+/* List design by 5cm */
+/* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58675479 */
+@\import url(//db.onlinewebfonts.com/c/935bfbf1ceff732132b87273b9a85be1?family=Whitestone);
+@font-face {font-family: "Whitestone";
+    src: url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.eot");
+    src: url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/935bfbf1ceff732132b87273b9a85be1.svg#Whitestone") format("svg"); } 
+body {
+    background: #0f2d73 0 30% / cover fixed url(https://a.wattpad.com/userbg/AnnelieLeddy.69497.jpg);
+    font: 14px calibri; color: white;}
+#mal_control_strip {
+    position: absolute !important; margin: auto !important; left: calc(50% - 516px) !important;
+    background: rgba(0,0,0,0.5) !important; width: 300px!important; padding: 10px !important; text-align: right;}
+#mal_cs_pic, #mal_cs_links, #mal_cs_powered, #mal_control_strip div:last-child a:last-child,
+#mal_cs_otherlinks div:last-child a:not([href$=php]), small [title], .category_totals {
+    display: none;}
+#mal_control_strip td {
+    width: auto; height: auto !important;}
+#mal_cs_listinfo, #mal_cs_otherlinks {
+    display: block; border: 0 !important; padding: 0 !important;}
+#mal_cs_listinfo div:first-child:before {
+    content: 'Welcome,';}
+#mal_cs_otherlinks div:last-child, small {
+    font-size: 0;}
+#mal_cs_otherlinks div:last-child a {
+    font: 12px calibri; color: #ccc; text-transform: uppercase; text-decoration: none; margin-left: 15px;}
+#mal_control_strip strong {
+    font: bold 14px calibri;}
+#mal_control_strip strong a {
+    font: inherit; color: white; letter-spacing: 1px; text-decoration: none; text-transform: uppercase;}
+#mal_control_strip strong a:hover, #mal_cs_otherlinks div:last-child a:hover {
+    color: yellow;}
+#mal_cs_otherlinks strong a {
+    border-bottom: 1px solid gold;}
+a:link, a:visited, a:active {
+    color: white; text-decoration: none;}
+#list_surround {
+    background: rgba(0,0,0,0.5) no-repeat url("http://www.symphogear.com/smartphone/images/logo.png");
+    background-position: 50% 40px; width: 660px; padding: 300px 30px 0 30px;
+    position: absolute; left: calc(50% - 206px); margin: auto;}
+br:first-child + table {
+    position: absolute; left: -310px; top: 76px; background: rgba(0,0,0,0.5); width: 300px; padding: 0px 30px;}
+[class^=status] {
+    display: block; width: 100%; margin: 30px 0; background-position: 0 -50px; background-size: cover !important;}
+[class^=status]:hover a {
+    color: white; font-size: 2em; line-height: 110px; text-align: center; right: 0;}
+[class^=status]:hover a:before {
+    width: 100%!important; height: 100%; margin: 0; right: 0;}
+[class^=status] a {
+    position: relative; right: 8px; z-index: 1; display: block; width: 100%; height: 110px;
+    font: italic 18px 'Whitestone'; color: white; line-height: 194px; text-transform: uppercase; text-align: right;}
+[class^=status] a:before {
+    content: ''; position: absolute; right: -8px; z-index: -1; display: block; margin-top: 84px; height: 26px;}
+[class^=status]:first-child {
+    background-image: url(https://68.media.tumblr.com/tumblr_otgvojIFEK1rjnkwqo1_1500684644_cover.jpg);}
+[class^=status]:nth-child(2) {
+    background-image: url(https://68.media.tumblr.com/tumblr_ou7n4wHKB71rjnkwqo1_1501933281_cover.jpg);}
+[class^=status]:nth-child(3) {
+    background-image: url(https://68.media.tumblr.com/tumblr_otn70wQ80J1ugu8gwo1_1500979281_cover.png);}
+[class^=status]:nth-child(4) {
+    background-image: url(https://68.media.tumblr.com/tumblr_otkwtv85RC1rjnkwqo1_1500872755_cover.jpg);}
+[class^=status]:nth-child(5) {
+    background-image: url(https://i.kfs.io/album/global/28236077,0v1/fit/500x500.jpg);}
+[class^=status]:last-child {
+    background-image: url(http://68.media.tumblr.com/tumblr_oud4d3261Z1ugu8gwo1_1502188888_cover.png);}
+[class^=status]:first-child a:before {
+    background: rgba(215, 158, 61, 0.7); width: 156px;}
+[class^=status]:nth-child(2) a:before {
+    background: rgba(127, 131, 192, 0.7); width: 90px;}
+[class^=status]:nth-child(3) a:before {
+    background: rgba(197, 81, 81, 0.7); width: 68px;}
+[class^=status]:nth-child(4) a:before {
+    background: rgba(91, 104, 133, 0.7); width: 72px;}
+[class^=status]:nth-child(5) a:before {
+    background: rgba(208, 113, 170, 0.7); width: 118px;}
+[class^=status]:last-child a:before {
+    background: rgba(61, 130, 67, 0.7); width: 110px;}
+table[class^=header] {
+    margin: 40px 0 10px 0; border: 1px solid #555;}
+div[class^=header] {
+    font: bold italic 50px 'Whitestone'; text-transform: uppercase;
+    text-shadow: 0 0 10px orange, 0 0px 5px orange; text-align: center;}
+[class^=header] + table ~ table tr:hover {
+    box-shadow: 0 0 10px orange; -webkit-transition: all 0.3s ease-in-out;}
+[class^=td] {
+    height: 25px;}
+.animetitle {
+    font-weight: bold;}
+a + small {
+    font: italic 11px calibri; color: lightsalmon; text-transform: uppercase; margin-left: 5px;}
+small .List_LightBox {
+    font-size: 13px; opacity: 0;}
+tr:hover [class^=td] {
+    background: rgba(255,255,255,1); color: black; -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+tr:hover .animetitle, tr:hover [class^=td][width] a, tr:hover a.List_LightBox {
+    color: black; opacity: 1;}
+tr:hover a + small {
+    color: orangered;}
+#grand_totals {
+    position: absolute; left: 0; margin-top: 10px; width: 100%; padding: 10px 0; 
+    background: rgba(0,0,0,0.5); font-size: 12px; color: #bbb; text-align: center;}
+#copyright {
+    position: absolute; top: 946px; left: -310px; width: 280px; padding: 10px;
+    background: rgba(0,0,0,0.5); font-size: 12px; color: #bbb;}
