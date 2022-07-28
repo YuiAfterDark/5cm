@@ -1,0 +1,64 @@
+/* List design by 5cm */
+/* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58098377 */
+@\import "https://fonts.googleapis.com/css?family=Roboto:400,700,900";
+
+body {
+     background: fixed url(https://www.dacodes.com/wp-content/uploads/2017/10/BlackTransparentBackground.png),
+       fixed center/cover url(https://i.redd.it/cu0uoae082111.png); background-color: black;
+     font: 13px Roboto; color: #bbb; text-transform: uppercase; overflow-x: hidden;}
+
+a {color: #bbb; text-decoration: none;}
+
+#list_surround {width: 700px; margin: auto;}
+
+#mal_control_strip {
+     width: 100%!important; position: relative; margin: 30px auto 0!important; background: none!important; text-align: right;}
+#mal_cs_pic, #mal_cs_powered, #mal_cs_listinfo div:last-child, #mal_cs_links div:first-child a:last-child,
+[data-owner=""] #mal_cs_listinfo, [data-owner=""] #mal_cs_links a, #mal_cs_otherlinks [href*=board],
+.status_selected, .category_totals, br:last-of-type, #grand_totals {display: none!important;}
+#mal_control_strip td, #mal_control_strip td div, #mal_cs_otherlinks strong {
+     display: inline; width: auto; padding: 0; border: 0; font-size: 0!important; display: inline;}
+#mal_cs_listinfo strong a, #mal_cs_otherlinks strong a {position: absolute; left: 30px; top: 15px;
+     font: 900 20px Roboto; line-height: 0; letter-spacing: 2px; text-transform: uppercase; text-decoration: none;}
+#mal_cs_links a, #mal_cs_otherlinks div:last-child a {font: 700 18px Roboto !important; color: #bbb !important;
+     line-height: 0 !important; letter-spacing: 1px; text-decoration: none !important; text-transform: uppercase !important;
+     position: relative; top: 15px; margin: 0 20px; padding: 30px 10px;}
+#mal_cs_links a:hover, #mal_cs_otherlinks div:last-child a:hover {color: white !important;
+     background: center/180px no-repeat url(https://newvitruvian.com/images/splatter-drawing-blood-smear-3.png);}
+#mal_control_strip strong a:hover, .status_not_selected a:hover {color: #dd0000;}
+
+.header_cw {background: calc(50% + 180px) -4%/600px url(https://www.seekpng.com/png/full/160-1605377_-transparent-guts-guts-berserk-transparent.png);}
+.header_completed {background: 50% 10%/800px url(http://img.ifcdn.com/images/5f382d24b6d81d472041d31ea470ea8cf26440f892e743e254633fbed81faa5a_1.jpg);}
+.header_onhold {background: calc(50% - 250px) 15%/800px url(https://mpng.pngfly.com/20180616/bzo/kisspng-casca-guts-griffith-berserk-drawing-berserk-5b2526183f8585.1847690015291612402602.jpg);}
+.header_dropped {background: calc(50% + 300px) 50%/500px url(https://i.pinimg.com/originals/4e/36/44/4e3644765d699abc519f895948576b85.png);}
+.header_ptw {background: 50% 100%/280px url(https://img.fireden.net/tg/image/1495/77/1495773544476.png);}
+
+br:first-child + table {position: absolute; left: 30px; margin-top: 20px; width: auto;}
+table[class^=header] {
+     position: absolute; width: 102%; height: 250px; left: -1%; margin-top: -250px; z-index: -1;
+     background-repeat: no-repeat; background-color: #bb1414; background-blend-mode: darken;
+     -webkit-transform: rotate(-5deg); transform: rotate(-4deg);}
+table[class^=header] div {
+     font: 900 40px Roboto; color: white; letter-spacing: .25em; text-align: center;
+     -webkit-transform: rotate(4deg); transform: rotate(4deg);}
+.table_header {padding: 10px 0;}
+.table_header[style], .table_header:not([align]) {visibility: hidden;}
+table + br {position: relative; display: block; margin-bottom: 350px;}
+tr:hover [class^=td], tr:hover [class^=td] a {color: white; transition: all .5s ease-in-out;}
+.td1, .td2 {height: 22px;}
+.td1:hover small, .td2:hover small {opacity: 1;}
+small:only-child {font-size: 10px; overflow: hidden; width: 21px; display: inline-block; margin-top: 3px; white-space: nowrap; opacity: 0;}
+a + small {position: absolute; margin: 3px 0 0 5px; font-size: 10px; color: #888;}
+
+.animetitle {font-weight: 700; display: inline-block; max-width: 400px; overflow: hidden;
+     line-height: 1.4em; white-space: nowrap; text-overflow: ellipsis;}
+.animetitle:before {content: ''; color: #bb1414; position: absolute; margin: -4px 0 0 -30px; opacity:0;
+  background: black 50%/contain no-repeat url(https://www.kmikze.com/5555-large_default/berserk-marca-del-sacrificio-rojo.jpg);
+  width: 30px; height: 30px; transition: opacity .5s ease-in-out;}
+.animetitle:hover {color: #dd0000!important;}
+.animetitle:hover:before {opacity: 1;}
+
+.status_not_selected {display: block; text-align: left; margin-bottom: 5px;}
+.status_not_selected a {font: 10px Roboto; color: #999; letter-spacing: 1px;}
+
+#copyright {margin-top: 40px!important; height: 50px;}
