@@ -1,10 +1,12 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58098377 */
+/* Layout modified by Valerio Lyndon, please direct any issues to V.L instead of 5cm. */
+/* Last modified: 2022-Jul-21 */
 @\import "https://fonts.googleapis.com/css?family=Roboto:400,700,900";
 
 body {
-     background: fixed url(https://www.dacodes.com/wp-content/uploads/2017/10/BlackTransparentBackground.png),
-       fixed center/cover url(https://i.redd.it/cu0uoae082111.png); background-color: black;
+     background: fixed linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+       fixed center/cover url(https://i.imgur.com/jLswMpF.png); background-color: black;
      font: 13px Roboto; color: #bbb; text-transform: uppercase; overflow-x: hidden;}
 
 a {color: #bbb; text-decoration: none;}
@@ -24,14 +26,14 @@ a {color: #bbb; text-decoration: none;}
      line-height: 0 !important; letter-spacing: 1px; text-decoration: none !important; text-transform: uppercase !important;
      position: relative; top: 15px; margin: 0 20px; padding: 30px 10px;}
 #mal_cs_links a:hover, #mal_cs_otherlinks div:last-child a:hover {color: white !important;
-     background: center/180px no-repeat url(https://newvitruvian.com/images/splatter-drawing-blood-smear-3.png);}
+     /* removed due to faulty image // background: center/180px no-repeat url(https://newvitruvian.com/images/splatter-drawing-blood-smear-3.png); */ }
 #mal_control_strip strong a:hover, .status_not_selected a:hover {color: #dd0000;}
 
-.header_cw {background: calc(50% + 180px) -4%/600px url(https://www.seekpng.com/png/full/160-1605377_-transparent-guts-guts-berserk-transparent.png);}
-.header_completed {background: 50% 10%/800px url(http://img.ifcdn.com/images/5f382d24b6d81d472041d31ea470ea8cf26440f892e743e254633fbed81faa5a_1.jpg);}
-.header_onhold {background: calc(50% - 250px) 15%/800px url(https://mpng.pngfly.com/20180616/bzo/kisspng-casca-guts-griffith-berserk-drawing-berserk-5b2526183f8585.1847690015291612402602.jpg);}
-.header_dropped {background: calc(50% + 300px) 50%/500px url(https://i.pinimg.com/originals/4e/36/44/4e3644765d699abc519f895948576b85.png);}
-.header_ptw {background: 50% 100%/280px url(https://img.fireden.net/tg/image/1495/77/1495773544476.png);}
+.header_cw {background: calc(50% + 180px) -4%/600px url(https://i.imgur.com/7F5lzry.png);}
+.header_completed {background: 50% 10%/800px url(https://i.imgur.com/z4rKke2.jpg);}
+.header_onhold {background: calc(50% - 250px) 15%/800px url(https://i.imgur.com/lXrnxun.jpg);}
+.header_dropped {background: calc(50% + 300px) 50%/500px url(https://i.imgur.com/LoGNTOy.png);}
+.header_ptw {background: 50% 100%/280px url(https://i.imgur.com/mkjtxgo.png);}
 
 br:first-child + table {position: absolute; left: 30px; margin-top: 20px; width: auto;}
 table[class^=header] {
@@ -53,7 +55,7 @@ a + small {position: absolute; margin: 3px 0 0 5px; font-size: 10px; color: #888
 .animetitle {font-weight: 700; display: inline-block; max-width: 400px; overflow: hidden;
      line-height: 1.4em; white-space: nowrap; text-overflow: ellipsis;}
 .animetitle:before {content: ''; color: #bb1414; position: absolute; margin: -4px 0 0 -30px; opacity:0;
-  background: black 50%/contain no-repeat url(https://www.kmikze.com/5555-large_default/berserk-marca-del-sacrificio-rojo.jpg);
+  background: black 50%/contain no-repeat url(https://i.imgur.com/0XR5pdp.png);
   width: 30px; height: 30px; transition: opacity .5s ease-in-out;}
 .animetitle:hover {color: #dd0000!important;}
 .animetitle:hover:before {opacity: 1;}
@@ -62,8 +64,6 @@ a + small {position: absolute; margin: 3px 0 0 5px; font-size: 10px; color: #888
 .status_not_selected a {font: 10px Roboto; color: #999; letter-spacing: 1px;}
 
 #copyright {margin-top: 40px!important; height: 50px;}
-
-/* Changes beyond this point are by Valerio Lyndon. Any problems with this code should not be directed at 5cm. */
 
 /* 2019-08-03 Patch for Chrome */
 
