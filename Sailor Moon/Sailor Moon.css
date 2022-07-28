@@ -1,38 +1,38 @@
-
 /*        List design by 5cm         Inspiration from SolitarySetsuna */
 /*     Render by ElysionsGarden       Background by Adrian Pelletier  */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg57006432 */
+/* Modified by Valerio Lyndon
+ * Last modified: 2022-JUL-28 */
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,800";
-@\import "https://malscraper.azurewebsites.net/covers/auto/presets/datatitlebefore";
 body {
-  background: #dfd1e0 repeat-x center/contain fixed
-    url(https://image.myanimelist.net/ui/fkLITaJTefafxFKPGRzngtEQrJsgH6ZcWACcraNYdFaj6awlwd5NVw4l1RHz4T-_)!important;
+  background: #dfd1e0 repeat-x center/cover fixed
+    url(https://i.imgur.com/aoFpxkK.jpg)!important;
   font: 11px Open Sans; color: #ccc; letter-spacing: 1px; text-transform: uppercase;}
 .header .header-title, .header .header-menu, .header .header-info, #header-menu-button,
 i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, #cover-image-container,
 .status-menu-container .status-menu .status-button::after, .status-menu-container .search-container,
-.list-unit .list-status-title .stats, .list-table .list-table-header .header-title.image,
-.list-table .list-table-data .data.image, .icon-watch.ml4, .more,
+.list-unit .list-status-title .stats,
+.icon-watch.ml4, .more,
 .list-table .list-table-data .tags .edit {
   display: none;}
 .header {
   position: fixed; width: 300px; height: 480px; left: calc(50% + 250px); top: 100px; z-index: 1;}
 .header:before {
-  content: url(https://image.myanimelist.net/ui/fkLITaJTefafxFKPGRzngugMyEX13ps3hq4aKHOIBB5ZXXYjF4jsNJpR0LzOs4Yn);
+  content: url(https://i.imgur.com/L3i5SP8.png);
   display: block; text-align: right;}
 .header .header-menu.other {
   display: block; top: unset; bottom: 98px; left: -10px;}
 .header .header-menu .btn-menu {
   font-size: 0; text-align: center;}
 .header a.username {
-  background: center/150px url(https://image.myanimelist.net/ui/uDqA5Hj63XC4_7-Zz2-uStdYe5Qg1UiBTLljp3L1u-Q);
+  background: center/150px;
   font: 800 20px Open Sans; color: rgba(255,255,255,.7); letter-spacing: 2px; padding: 5px 0;}
 .list-menu-float {
   top: 450px; left: calc(50% + 250px); width: 300px; border: 0; z-index: 1;}
 .icon-menu.profile {
-  background: url(none)!important; display: inline-block; width: auto; height: auto;}
+  background: none!important; display: inline-block; width: auto; height: auto;}
 .icon-menu.profile:after {content: attr(href);
-  background: center/120px url(https://image.myanimelist.net/ui/uDqA5Hj63XC4_7-Zz2-uStdYe5Qg1UiBTLljp3L1u-Q);
+  background: center/120px;
   font: 800 20px Open Sans; color: rgba(255,255,255,.7); letter-spacing: 2px; padding: 5px;
   display: inline-block; white-space: nowrap; text-indent: -443px; overflow: hidden;}
 .icon-menu.profile:hover:after, .header a:hover,
@@ -89,13 +89,36 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
   content: '\f05e'}
 .data.status.plantowatch:before {
   content: '\f017';}
-.data.image ~ .data.title .link:before {
-  content: ''; position: absolute; display: block; left: -80px; margin-top: -80px;
-  width: 120px; height: 180px; background-size: cover; background-position: center;
-  border-radius: 7px; box-shadow: 0px 4px 10px rgba(0,0,0,.4); opacity: 0; z-index: -1;
-  transition: all .5s ease-in-out;}
-.list-table-data:hover .data.title .link:before {
-  opacity: .8;}
+.list-table .list-table-header .header-title.image,
+.list-table .list-table-data .data.image {
+	width: 0;
+	padding: 0;
+}
+.list-table .list-table-header .header-title.image .link {
+	display: none;
+}
+.list-table .list-table-data .data.image .link {
+	position: absolute;
+	left: -100px;
+	z-index: -1;
+	width: 120px;
+	height: 180px;
+	margin-top: -90px;
+	border-radius: 7px;
+	overflow: hidden;
+	box-shadow: 0px 4px 10px rgba(0,0,0,.4);
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+.list-table .list-table-data:hover .data.image .link {
+	opacity: .8;
+}
+.list-table .list-table-data .data.image .image {
+	width: 100%;
+	height: 100%;
+	border: none;
+	object-fit: cover;
+}
 .list-table .list-table-header .header-title.number {
   position: absolute; visibility: hidden;}
 .list-table .list-table-data .data.number {
