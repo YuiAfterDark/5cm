@@ -62,3 +62,19 @@ a + small {position: absolute; margin: 3px 0 0 5px; font-size: 10px; color: #888
 .status_not_selected a {font: 10px Roboto; color: #999; letter-spacing: 1px;}
 
 #copyright {margin-top: 40px!important; height: 50px;}
+
+/* Changes beyond this point are by Valerio Lyndon. Any problems with this code should not be directed at 5cm. */
+
+/* 2019-08-03 Patch for Chrome */
+
+table + br {
+    margin-bottom: 0;
+}
+
+table[class^="header_"] {
+     margin-top: 100px;
+}
+
+table[class^="header_"] + table {
+     padding-top: 350px;
+}
