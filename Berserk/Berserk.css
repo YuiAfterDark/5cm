@@ -84,3 +84,11 @@ table[class^="header_"] + table {
 [width="125"] {
 	display: table-cell !important;
 }
+
+/* 2022-07-21 Fix for recaptcha */
+
+#copyright {
+	height: 50px;
+	margin-top: -20px;
+	text-align: center;
+}
