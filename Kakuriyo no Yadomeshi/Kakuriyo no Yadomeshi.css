@@ -1,12 +1,13 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58794999 */
+/* Modified by Valerio Lyndon */
+/* Last modification: 2022-JUL-28 */
 
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
-@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelink";
 
 body {
-  background: url(https://image.myanimelist.net/ui/fkLITaJTefafxFKPGRznglNnufcAvn5pOQqmKwnxF4MEGjNRtCIn1TT-_7JXz8nZ),
-    url(https://image.myanimelist.net/ui/uf6p6rEk2dlZoh8DIyYQTScPXcYWVkorZzR5QFff8DyDzTdbJYJwzH3R2lWVJkHOdP4y55c06A4fZbPXJpqYDvLuhyaebcSPnK6QLHBED7-o-ClTkn_bsnshpfBLGgPZjMiKMrXcb1iI6PR717oIPNFRI5v-1r-20IDrpHAdy8KmO4zdFnmomZ_ySnrHu1cr4VmTEJbm7Xv2ihRc4y3k9ljwhkaai7BkFFcWo-qGkHg) !important;
+  background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),
+    url(https://i.imgur.com/5tUe3Sl.gif) !important;
   font: 300 11px Open Sans; color: black !important;}
 
 *:not(a:hover):not(input) {
@@ -25,11 +26,11 @@ a:link, a:active, a:visited {color: black;}
 .list-table .list-table-data .data.status, .list-table .list-table-data .data.number,
 .list-table .list-table-data .data.status.plantowatch ~ .data.score,
 .list-table .list-table-data .data.progress ~ td,
-.cover-block, i.fa:not([class*=sort]):not([class$=circle]), img, .icon-watch.ml4, .more,
+.cover-block, i.fa:not([class*=sort]):not([class$=circle]), .icon-watch.ml4, .more,
 [data-owner=""] .add-edit-more {display: none;}
 
 .header {    
-  background: #fbf3de no-repeat center 60% url(https://image.myanimelist.net/ui/fkLITaJTefafxFKPGRzngiJt9TfQwEcrDzdmp7jwHEbrQs1UV_K2gpEevyEZdHV1);
+  background: #fbf3de no-repeat center 60% url(https://i.imgur.com/rn9gnrX.png);
   width: 100%; height: 480px;}
 
 .header .header-menu.other {
@@ -61,7 +62,7 @@ a:link, a:active, a:visited {color: black;}
   background: none; border: 0; box-shadow: none;}
 
 body[data-owner="1"]:before {
-  content: ''; background: top left/contain url(https://image.myanimelist.net/ui/rQNXG68HsXXb8OommKJ2LPMHpYNdlAd8VpkDuVKS_mvC8NpFPkT0xkTDsGLzhcVl);
+  content: ''; background: top left/contain url(https://i.imgur.com/CqLKXd5.png);
   width: 130px;  height: 250px; position: absolute; top: 10px; left: 10px; z-index: 1;}
 
 .list-menu-float {
@@ -103,7 +104,7 @@ body[data-owner="1"]:before {
 
 #status-menu .status-menu:before {
   content: ''; display: inline-block; width: 90px; height: 90px; border-radius: 50%;
-  background: center/cover url(https://image.myanimelist.net/ui/FvTouLv2tbXNvntQBGK5zTYRmfY3RS6UaMqsugOFuUKKorUtFjU_h3Db42eL4tb7lwytJVRRhXuI26bxkL9CR790Xdoit1NJV0r-JcCCx7TtYQY5D3cwyVYJSeaVbVPT);
+  background: center/cover url(https://i.imgur.com/FyQggCt.gif);
   position: absolute; margin-top: -20px;}
 
 #status-menu .status-button {
@@ -134,7 +135,7 @@ body[data-owner="1"]:before {
   width: 150px; height: auto;}
 
 #search-box input {
-  background: white 3px 50%/20px no-repeat url(https://image.myanimelist.net/ui/ueQLRyZL_yQZxD14iYLZC_gLr-mtem_jVqxnLpUY6LHlp_sr_ZwRrhNpbh7nV5sCeo7Sp3-sdxOAu1kTqLeHfW7i3YHTvUNvkDS5qKJPeIQyZ4XG2BGDzLdXX1QvKlrJ);
+  background: white 3px 50%/20px no-repeat url(https://i.imgur.com/beyQNrD.png);
   font: 300 11px Open Sans; color: #999;
   padding: 4px 12px 6px 25px; border: 1px solid #ddd; border-radius: 10px;}
 
@@ -254,6 +255,13 @@ body[data-owner="1"]:before {
 .list-table .list-table-data .data.image a {
   width: 200px; height: 280px; background-size: contain; background-position: center; background-repeat: no-repeat;}
 
+.list-table .list-table-data .data.image .image {
+	width: 100%;
+	height: 100%;
+	border: none;
+	object-fit: contain;
+}
+
 .list-table .list-table-data .data a, .list-table .list-table-data a.edit-disabled {
   color: black !important;}
 
@@ -263,5 +271,5 @@ body[data-owner="1"]:before {
 #footer-block {
   background: #fbf3de; margin-top: 20px;}
 
-#copyright {
+#copyright, #recaptcha-terms {
   font: 400 8px Open Sans; letter-spacing: 1px; color: #777; text-transform: uppercase;}
