@@ -78,3 +78,9 @@ table[class^="header_"] {
 table[class^="header_"] + table {
      padding-top: 350px;
 }
+
+/* 2019-09-21 Patch for Tags */
+
+[width="125"] {
+	display: table-cell !important;
+}
