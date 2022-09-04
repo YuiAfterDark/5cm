@@ -2,7 +2,7 @@
 /*     Render by ElysionsGarden       Background by Adrian Pelletier  */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg57006432 */
 /* Modified by Valerio Lyndon
- * Last modified: 2022-JUL-28 */
+ * Last modified: 2022-SEP-03 */
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,800";
 body {
   background: #dfd1e0 repeat-x center/cover fixed
@@ -131,6 +131,9 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
 .list-table .list-table-data .data.title .link {
   font-size: 1em; line-height: 1em; color: white!important; display: inline-block;
   max-width: 270px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.list-table .list-table-data .data.title .notes .text {
+	color: #ccc
+}
 .content-status {
   background: rgba(0,0,0,.2); padding: 1px 0 2px 4px;
   border-radius: 10px; position: relative; top: -1px;}
