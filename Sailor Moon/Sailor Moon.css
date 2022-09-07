@@ -2,7 +2,7 @@
 /*     Render by ElysionsGarden       Background by Adrian Pelletier  */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg57006432 */
 /* Modified by Valerio Lyndon
- * Last modified: 2022-SEP-03 */
+ * Last modified: 2022-SEP-05 */
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,800";
 body {
   background: #dfd1e0 repeat-x center/cover fixed
@@ -37,7 +37,8 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
   display: inline-block; white-space: nowrap; text-indent: -443px; overflow: hidden;}
 .icon-menu.profile:hover:after, .header a:hover,
 .list-table .list-table-data a:not(.edit-disabled):hover,
-.status-menu-container .status-menu .status-button:not(.on):hover {
+.status-menu-container .status-menu .status-button:not(.on):hover,
+#recaptcha-terms a:hover {
   color: white; text-decoration: none;}
 .list-container {
   width: 1000px; top: 100px; background: none!important; border: 0;}
@@ -146,5 +147,5 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
   font-size: 8px; line-height: 1em;}
 #footer-block {
   background: none; position: relative; top: 90px;}
-#copyright {
+#copyright, #recaptcha-terms, #recaptcha-terms a {
   font: 8px Open Sans; color: rgba(0,0,0,.6)}
