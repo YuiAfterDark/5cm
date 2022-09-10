@@ -1,0 +1,51 @@
+/* Restyle Theme */
+
+:root {
+	--i-background: url(https://i.imgur.com/jLswMpF.png);
+	--i-current: url(https://i.imgur.com/7F5lzry.png);
+	--i-current-size: 600px;
+	--i-current-pos: calc(50% + 180px) -4%;
+	--i-completed: url(https://i.imgur.com/z4rKke2.jpg);
+	--i-completed-size: 800px;
+	--i-completed-pos: 50% 10%;
+	--i-onhold: url(https://i.imgur.com/lXrnxun.jpg);
+	--i-onhold-size: 800px;
+	--i-onhold-pos: calc(50% - 250px) 15%;
+	--i-dropped: url(https://i.imgur.com/LoGNTOy.png);
+	--i-dropped-size: 500px;
+	--i-dropped-pos: calc(50% + 300px) 50%;
+	--i-planned: url(https://i.imgur.com/mkjtxgo.png);
+	--i-planned-size: 280px;
+	--i-planned-pos: 50% 100%;
+	--i-row-decor: url(https://i.imgur.com/0XR5pdp.png);
+	--c-background: black;
+	--c-background-overlay: rgba(0,0,0,0.55);
+	--c-text: #bbb;
+	--c-text-hover-1: white;
+	--c-text-hover-2: #dd0000;
+	--c-banner: #bb1414;
+	--c-banner-text: white;
+	--c-category-text: #999;
+}
+
+body {
+	background:
+		fixed linear-gradient(var(--c-background-overlay),var(--c-background-overlay)),
+		fixed center/cover var(--i-background),
+		var(--c-background);
+	color: var(--c-text);}
+a {color: var(--c-text);}
+#mal_cs_links a, #mal_cs_otherlinks div:last-child a {color: var(--c-text) !important;}
+#mal_cs_links a:hover, #mal_cs_otherlinks div:last-child a:hover {color: var(--c-text-hover-1) !important;}
+tr:hover [class^=td], tr:hover [class^=td] a {color: var(--c-text-hover-1);}
+.status_not_selected a {color: var(--c-category-text);}
+#mal_control_strip strong a:hover, .status_not_selected a:hover {color: var(--c-text-hover-2);}
+.animetitle:before {background-image: var(--i-row-decor);}
+.animetitle:hover {color: var(--c-text-hover-2) !important;}
+table[class^=header] {background-color: var(--c-banner);}
+table[class^=header] div {color: var(--c-banner-text);}
+.header_cw {background: var(--i-current-pos) / var(--i-current-size) var(--i-current);}
+.header_completed {background: var(--i-completed-pos) / var(--i-completed-size) var(--i-completed);}
+.header_onhold {background: var(--i-onhold-pos) / var(--i-onhold-size) var(--i-onhold);}
+.header_dropped {background: var(--i-dropped-pos) / var(--i-dropped-size) var(--i-dropped);}
+.header_ptw {background: var(--i-planned-pos) / var(--i-planned-size) var(--i-planned);}
