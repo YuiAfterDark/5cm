@@ -1,0 +1,5 @@
+/* Blend Background */
+
+body {
+	background-blend-mode: hard-light;
+}

@@ -1,0 +1,12 @@
+/* Fade Background */
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to bottom, transparent 33%, #7fc1a5cc);
+	pointer-events: none;
+}
