@@ -1,0 +1,90 @@
+/* Restyle Theme */
+
+/* BACKGROUND */
+body {
+	background-color: #dfd1e0 !important;
+}
+
+/* REGULAR TEXT */
+body,
+.list-table .list-table-header .header-title .sort-icon,
+.list-table .list-table-header .header-title .link.sort,
+.list-table .list-table-data .data a,
+.list-table .list-table-data a.edit-disabled,
+.list-table .list-table-data .data.title .notes .text,
+[class^="icon-watch"] .malicon,
+.mal-modal .mal-modal-dialog .mal-modal-content a:hover,
+.mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-header
+{
+	color: #ccc !important;
+}
+
+/* BRIGHT TEXT */
+.icon-menu.profile:hover::after,
+.header a:hover,
+.status-menu-container .status-menu .status-button:not(.on):hover,
+.list-table .list-table-data a:not(.edit-disabled):hover,
+.list-table .list-table-data .data.title .link,
+#recaptcha-terms a:hover,
+.mal-modal .mal-modal-dialog .mal-modal-content a,
+.mal-modal .mal-modal-dialog .mal-modal-content button.btn-close
+{
+	color: #fff !important;
+}
+
+/* USERNAME TEXT */
+.header a.username,
+.icon-menu.profile:after {
+	color: rgba(255,255,255,.7);
+}
+
+/* NUMBER TEXT */
+.list-table .list-table-data .data.number {
+	color: rgba(0,0,0,.3);
+}
+
+/* FOOTER TEXT */
+#copyright,
+#recaptcha-terms,
+#recaptcha-terms a {
+	color: rgba(0,0,0,.6);
+}
+
+/* CATEGORY MENU DROPDOWN */
+.status-menu-container .status-menu .status-button {
+	background: rgba(255,255,255,.2);
+	color: rgba(67,72,104,.7);
+}
+
+/* CATEGORY MENU SELECTED */
+.status-menu-container .status-menu .status-button.on {
+	background: rgba(92,99,145,.2);
+	color: #e8e8e8 !important;
+	border-color: #e8e8e8;
+}
+
+/* LIST ROW BACKGROUND */
+.list-item,
+.list-table > tbody:nth-of-type(2n+1) {
+	background: rgba(0,0,0,.2);
+}
+/* ON HOVER */
+/* Applied -on top- of the other background. */
+.list-table .list-table-data:hover {
+	background: rgba(0,0,0,.1);
+}
+
+/* AIRING STATUS */
+.content-status {
+	background: rgba(0,0,0,.2);
+}
+
+/* IMAGE SHADOW */
+.list-table .list-table-data .data.image .link {
+	box-shadow: 0px 4px 10px rgba(0,0,0,.4);
+}
+
+/* STREAMING POPUP BACKGROUND */
+.mal-modal .mal-modal-dialog .mal-modal-content {
+	background-color: #8783b366 !important
+}
