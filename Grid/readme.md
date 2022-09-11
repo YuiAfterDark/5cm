@@ -1,0 +1,1 @@
+The original layout design by 5cm is based on the anime "Kakuriyo no Yadomeshi". As the theme became more general-purpose due to changes primarily by Shishio-kun, the name was changed.
