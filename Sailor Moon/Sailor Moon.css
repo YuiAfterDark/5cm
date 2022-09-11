@@ -2,7 +2,7 @@
 /*     Render by ElysionsGarden       Background by Adrian Pelletier  */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg57006432 */
 /* Modified by Valerio Lyndon
- * Last modified: 2022-SEP-05 */
+ * Last modified: 2022-SEP-10 */
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,800";
 body {
   background: #dfd1e0 repeat-x center/cover fixed
@@ -16,7 +16,12 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
 .list-table .list-table-data .tags .edit {
   display: none;}
 .header {
-  position: fixed; width: 300px; height: 480px; left: calc(50% + 250px); top: 100px; z-index: 1;}
+  position: fixed; width: 300px; height: 480px; left: calc(50% + 250px); top: 100px; z-index: 1;
+	pointer-events: none;
+}
+.header a {
+	pointer-events: auto;
+}
 .header:before {
   content: url(https://i.imgur.com/L3i5SP8.png);
   display: block; text-align: right;}
@@ -39,7 +44,7 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
 .list-table .list-table-data a:not(.edit-disabled):hover,
 .status-menu-container .status-menu .status-button:not(.on):hover,
 #recaptcha-terms a:hover {
-  color: white; text-decoration: none;}
+  color: white !important; text-decoration: none;}
 .list-container {
   width: 1000px; top: 100px; background: none!important; border: 0;}
 #status-menu {
@@ -67,6 +72,9 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
   border: 0; border-collapse: separate; border-spacing: 0 2px;}
 .list-table > tbody:nth-of-type(2n+1):first-child, .list-table .list-table-header .header-title {
   background: none; border: 0; height: 18px;}
+.list-table .list-table-header .header-title .sort-icon {
+	color: #ccc;
+}
 .list-item, .list-table > tbody:nth-of-type(2n+1) {
   background: rgba(0,0,0,.2);}
 .list-table .list-table-header .header-title.title {
@@ -136,7 +144,8 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
 	color: #ccc
 }
 .content-status {
-  background: rgba(0,0,0,.2); padding: 1px 0 2px 4px;
+	display: inline-block;
+  background: rgba(0,0,0,.2); padding: 1px 4px 2px 4px;
   border-radius: 10px; position: relative; top: -1px;}
 .list-table .list-table-data .data.title .add-edit-more {
   float: none; display: inline; font-size: 0; line-height: 0; opacity: 0;
@@ -149,3 +158,25 @@ i.fa, [data-owner=""] .list-menu-float, .icon-menu:not(.profile), .cover-block, 
   background: none; position: relative; top: 90px;}
 #copyright, #recaptcha-terms, #recaptcha-terms a {
   font: 8px Open Sans; color: rgba(0,0,0,.6)}
+
+/* 2022-09-10 streaming popup - credit to lifeiscrazy for initial design */
+
+[class^="icon-watch"] .malicon {
+  color: #ccc !important;
+}
+.mal-modal .mal-modal-dialog .mal-modal-content {
+  background-color: #8783b366 !important
+}
+.mal-modal .mal-modal-dialog .mal-modal-content a, .mal-modal .mal-modal-dialog .mal-modal-content button.btn-close {color: white !important}
+.mal-modal .mal-modal-dialog .mal-modal-content a:hover {
+  color: #ccc !important;
+  background-color: unset !important;
+}
+
+.mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-header {
+	color: #ccc;
+	border-color: transparent;
+}
+.mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-header .row.reverse {
+	text-align: left;
+}
