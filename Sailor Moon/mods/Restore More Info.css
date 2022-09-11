@@ -1,0 +1,17 @@
+/* More Info - credit to lifeiscrazy */
+
+.more {
+	display: inline;
+}
+
+.list-table .list-table-data .data.title .add-edit-more {
+  font-size: 8px !important;
+  line-height: 1em !important;
+  position:relative;
+  top:2px;
+  display: block !important;
+}
+.borderRBL, .borderRBL *
+{font-size: 10px !important;}
+.borderRBL a {color: white !important}
+.borderRBL a:hover {color: #ccc !important}
