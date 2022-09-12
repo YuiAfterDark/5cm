@@ -10,8 +10,11 @@ body {
     url(https://i.imgur.com/5tUe3Sl.gif) !important;
   font: 300 11px Open Sans; color: black !important;}
 
-*:not(a:hover):not(input) {
-  cursor: default;}
+*:not(input) {
+	cursor: default;
+} a, a * {
+	cursor: pointer;
+}
 
 a:link, a:active, a:visited {color: black;}
 
@@ -115,7 +118,7 @@ body[data-owner="1"]:before {
   margin-left: 100px;}
 
 #header-menu-button, #status-menu .status-button.on {
-  cursor: default; font-weight: 700; text-decoration: none;}
+  pointer-events: none; font-weight: 700; text-decoration: none;}
 
 #status-menu .status-button:not(.on):hover {
   background: #f6a8a0;}
@@ -138,6 +141,10 @@ body[data-owner="1"]:before {
   background: white 3px 50%/20px no-repeat url(https://i.imgur.com/beyQNrD.png);
   font: 300 11px Open Sans; color: #999;
   padding: 4px 12px 6px 25px; border: 1px solid #ddd; border-radius: 10px;}
+
+#search-button {
+	color: #787878 !important;
+}
 
 .list-block, .status-menu-container.fixed + div.list-block {
   margin-top: 30px; min-height: 0;}
@@ -262,7 +269,6 @@ body[data-owner="1"]:before {
   opacity: 1;
 }
 [class^="icon-watch"] i {
-  cursor: pointer !important;
 	color: #888 !important;
 }
 
