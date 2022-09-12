@@ -1,7 +1,7 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58794999 */
 /* Modified by Valerio Lyndon */
-/* Last modification: 2022-JUL-28 */
+/* Last modification: 2022-SEP-11 */
 
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
 
@@ -204,7 +204,13 @@ body[data-owner="1"]:before {
   opacity: 1;}
 
 .list-table .list-table-data .data.title {
-   letter-spacing: 0; padding: 0;}
+	display: flex;
+	letter-spacing: 0;
+	padding: 0;
+  align-items: top;
+  flex-flow: row-reverse;
+  justify-content: left;
+}
 
 .list-table .list-table-data .data.title .link  {
   position: absolute; left: 20px; bottom: 45px; width: 160px; z-index: 2; opacity: 0;
@@ -244,6 +250,21 @@ body[data-owner="1"]:before {
 
 [data-owner="1"] .list-table .list-table-data .data.title span:not([style]) {
   left: 30px;}
+
+[class^="icon-watch"] {
+  position: relative;
+  top: 22px;
+  left: 15px;
+  z-index: 1;
+  opacity: 0;
+}
+.list-item:hover [class^="icon-watch"] {
+  opacity: 1;
+}
+[class^="icon-watch"] i {
+  cursor: pointer !important;
+	color: #888 !important;
+}
 
 .list-table .list-table-data .data.title .add-edit-more {
   font-size: 0; float: none; z-index: 5; position: relative; top: 19px; left: 15px}
