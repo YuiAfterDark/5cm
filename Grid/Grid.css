@@ -31,7 +31,7 @@ a:link, a:active, a:visited {color: var(--c-text);}
 .list-table .list-table-data .data.status, .list-table .list-table-data .data.number,
 .list-table .list-table-data .data.status.plantowatch ~ .data.score,
 .list-table .list-table-data .data.progress ~ td,
-.cover-block, i.fa:not([class*=sort]):not([class$=circle]), .icon-watch.ml4, .more,
+.cover-block, i[class^="fa-"]:not([class*=sort]):not([class$=circle]):not([class*="magnifying"]):not([class$="fa-circle-plus"]), .icon-watch.ml4, .more,
 [data-owner=""] .add-edit-more {display: none;}
 
 .header {
@@ -253,7 +253,7 @@ a:link, a:active, a:visited {color: var(--c-text);}
 	width: 35px; height: auto; margin-left: 145px; opacity: 0;
 	margin-top: 250px; font-size: 11px; text-align: right;}
 
-.progress div:after {
+.progress span:last-of-type:after {
 	content: 'episodes'; margin-left: 3px;}
 
 [class^="icon-add"] {
