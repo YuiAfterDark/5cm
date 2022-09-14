@@ -218,15 +218,15 @@ a:link, a:active, a:visited {color: var(--c-text);}
   opacity: 1;}
 
 .list-table .list-table-data .data.title {
-	display: flex;
-	letter-spacing: 0;
-	padding: 0;
-  align-items: top;
-  flex-flow: row-reverse;
+  display: flex;
+  letter-spacing: 0;
+  padding: 0;
+  align-items: flex-start;
+  flex-flow: row;
   justify-content: left;
 }
 
-.list-table .list-table-data .data.title .link  {
+.list-table .list-table-data .data.title .link {
   position: absolute; left: 20px; bottom: 45px; width: 160px; z-index: 2; opacity: 0;
   font-size: 20px; color: var(--c-list-text) !important; line-height: 22px; text-transform: upper;}
 
@@ -256,14 +256,24 @@ a:link, a:active, a:visited {color: var(--c-text);}
 .progress div:after {
   content: 'episodes'; margin-left: 3px;}
 
+[class^="icon-add"] {
+	margin-left: 3px;
+}
+
 .list-table .list-table-data .data.title .rewatching,
 .list-table .list-table-data .data.title .rereading,
 .list-table .list-table-data .data.title .content-status {
-  position: absolute; top: 20px; left: 20px; font: 600 9px Open Sans;
-  color: var(--c-list-extra-text); border: 1px solid var(--c-list-extra-border); padding: 2px 4px; opacity: 0; text-transform: uppercase;}
-
-[data-owner="1"] .list-table .list-table-data .data.title span:not([style]) {
-  left: 30px;}
+	position: relative;
+	top: 20px;
+	left: 15px;
+	padding: 2px 4px;
+	border: 1px solid var(--c-list-extra-border);
+	order: 3;
+	color: var(--c-list-extra-text);
+	font: 600 9px Open Sans;
+	text-transform: uppercase;
+	opacity: 0;
+}
 
 [class^="icon-watch"] {
   position: relative;
@@ -271,16 +281,17 @@ a:link, a:active, a:visited {color: var(--c-text);}
   left: 15px;
   z-index: 1;
   opacity: 0;
+  margin-right: 5px;
 }
 .list-item:hover [class^="icon-watch"] {
   opacity: 1;
 }
 [class^="icon-watch"] i {
-	color: var(--c-text-subdued) !important;
+  color: var(--c-text-subdued) !important;
 }
 
 .list-table .list-table-data .data.title .add-edit-more {
-  font-size: 0; float: none; z-index: 5; position: relative; top: 19px; left: 15px}
+  font-size: 0; float: none; z-index: 5; position: relative; top: 19px; left: 15px; order: -1; }
 
 .edit a:after {
   content: '\f142'; font: 18px FontAwesome;
