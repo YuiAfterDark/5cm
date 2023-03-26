@@ -1,5 +1,5 @@
 /* Attack on Titan Theme by Shishio-kun
- * Last updated: 2023-Mar-25
+ * Last updated: 2022-09-17
  */
 
 :root {
@@ -36,7 +36,7 @@
 
 /* TITAN HAND*/
 
-body[data-owner]:before{
+body:before{
 content: "";
 background-image: url(https://i.imgur.com/uLUkXHv.png);
 background-size: cover;	
