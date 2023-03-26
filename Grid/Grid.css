@@ -1,7 +1,7 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58794999 */
 /* Modified by Valerio Lyndon */
-/* Last modification: 2022-SEP-18 */
+/* Last modification: 2022-Mar-25 */
 
 @\import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
 
@@ -296,6 +296,10 @@ a:link, a:active, a:visited {color: var(--c-text);}
 .edit a:after {
 	content: '\f142'; font: 18px FontAwesome;
 	color: var(--c-text-subdued); opacity: 0;}
+
+.data.image {
+	z-index: 0;
+}
 
 .list-table .list-table-data .data.image a {
 	width: 200px; height: 280px; background-size: cover; background-position: center;}
