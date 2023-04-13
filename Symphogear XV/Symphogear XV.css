@@ -1,8 +1,10 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58675479 */
+/* Modified by Valerio_Lyndon */
+/* Last modified: 2023-Apr-12 */
 @\import "https://dl.dropboxusercontent.com/s/k1l6auq26iqc0hr/Whitestone.css";
 body {
-    background: #0f2d73 0 30% / cover fixed url(https://a.wattpad.com/userbg/AnnelieLeddy.69497.jpg);
+    background: #0f2d73 0 30% / cover fixed url(https://a.wattpad.com/userbg/AnnelieLeddy.69497.jpg) !important;
     font: 14px calibri; color: white;}
 #mal_control_strip {
     position: absolute !important; margin: auto !important; left: calc(50% - 516px) !important;

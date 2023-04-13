@@ -1,12 +1,14 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg58098377 */
-/* Layout modified by Valerio Lyndon, please direct any issues to V.L instead of 5cm. */
-/* Last modified: 2022-Jul-21 */
+/* Modified by Valerio Lyndon */
+/* Last modified: 2023-Apr-12 */
 @\import "https://fonts.googleapis.com/css?family=Roboto:400,700,900";
 
 body {
-     background: fixed linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
-       fixed center/cover url(https://i.imgur.com/jLswMpF.png); background-color: black;
+     background:
+	   fixed linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+       fixed center/cover url(https://i.imgur.com/jLswMpF.png),
+	   black !important;
      font: 13px Roboto; color: #bbb; text-transform: uppercase; overflow-x: hidden;}
 
 a {color: #bbb; text-decoration: none;}

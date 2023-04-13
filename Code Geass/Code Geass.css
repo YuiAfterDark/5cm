@@ -1,13 +1,15 @@
 /* List design by 5cm */
 /* https://myanimelist.net/forum/?topicid=1099375&show=350#msg56737210 */
-/* Layout modified by Valerio Lyndon, please direct any issues to V.L instead of 5cm. */
-/* Last modified: 2022-Jul-28 */
+/* Modified by Valerio Lyndon */
+/* Last modified: 2023-Apr-12 */
 @\import "https://fonts.googleapis.com/css?family=Crushed";
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/animetitlebefore";
 body {
-    background: fixed center/cover url(https://i.imgur.com/aebBxr6.png),
-        url(https://i.imgur.com/jvIfoCT.gif);
-    background-color: black; font: 15px Crushed; color: #999; letter-spacing: 1px; text-transform: uppercase;}
+    background:
+		fixed center/cover url(https://i.imgur.com/aebBxr6.png),
+        url(https://i.imgur.com/jvIfoCT.gif),
+		black !important;
+	font: 15px Crushed; color: #999; letter-spacing: 1px; text-transform: uppercase;}
 a, a:visited, a:active {
     color: #999; text-decoration: none;}
 #mal_control_strip {
