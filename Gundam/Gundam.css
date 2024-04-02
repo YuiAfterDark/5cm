@@ -1,12 +1,16 @@
-/* List design by 5cm */
+/*
+List design by 5cm
+Last update: 2024-Apr-01
+*/
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
 @\import "https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&family=Montserrat:wght@900&family=Roboto+Mono";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 
   body {
     background-color: black;
-    background-image: /* PNG VECTOR */ url(https://i.pinimg.com/originals/ea/e4/24/eae42453336b2099b78b1e451a2f3421.png),
-                      /* BACKGROUND */ url(https://steamuserimages-a.akamaihd.net/ugc/100603562874451991/87A859C846646C1D4B63EBC3AA17E7FDEF72B679/);
+    background-image: /* PNG VECTOR - gundam.png */ url(https://i.imgur.com/U6ojRIq.png),
+                      /* BACKGROUND - background.jpeg */ url(https://i.imgur.com/c2epcCC.jpeg);
     background-position: -5% calc(100% + 30px), bottom center;
     background-size: 50%, cover;
     background-attachment: fixed;
@@ -161,7 +165,7 @@
 /* LINES IN BETWEEN STATUS LINKS */
   br:first-child + table:before {
     content: '';
-    background: 0 0/5px url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVQYlWNgGAX0BWfOnPlPDAYAtQIh38Axla8AAAAASUVORK5CYII=);
+    background: 0 0/5px url(https://i.imgur.com/IqFekbc.png) /* line.png */;
     width: 7px;
     height: 220px;
     position: absolute;}
@@ -258,7 +262,7 @@
     width: 150px;
     height: 200px;
     opacity: 0;
-    background: center/cover url(https://media.tenor.com/images/320f72da506c45cda6cf39700daf339a/tenor.gif);}
+    background: center/cover url(https://i.imgur.com/iYbox0z.gif) /* cover_glitch.gif */;}
 
 /* DISPLAYING COVERS */
   table:hover + .hide {
@@ -295,7 +299,7 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: center/cover url(https://cdn.iconscout.com/icon/free/png-256/comment-37-444617.png);
+    background: center/cover url(https://i.imgur.com/gnzkX7o.png) /* tags.png */;
     margin-top: 5px;}
 
 /* DISPLAYING REVIEW/COMMENTS */
@@ -312,7 +316,7 @@
     display: block !important;
     width: 450px;
     height: 120px;
-    background-image: url(https://thumbs.gfycat.com/RemorsefulUnsteadyCrossbill-size_restricted.gif);
+    background-image: url(https://i.imgur.com/lMpUvhv.gif) /* flair.gif */;
     background-position: right center;
     background-size: cover;
     position: fixed;
