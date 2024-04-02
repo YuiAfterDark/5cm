@@ -1,0 +1,346 @@
+/* List design by 5cm */
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&family=Montserrat:wght@900&family=Roboto+Mono";
+
+  body {
+    background-color: black;
+    background-image: /* PNG VECTOR */ url(https://i.pinimg.com/originals/ea/e4/24/eae42453336b2099b78b1e451a2f3421.png),
+                      /* BACKGROUND */ url(https://steamuserimages-a.akamaihd.net/ugc/100603562874451991/87A859C846646C1D4B63EBC3AA17E7FDEF72B679/);
+    background-position: -5% calc(100% + 30px), bottom center;
+    background-size: 50%, cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font: 14px Roboto Condensed;
+    color: #999;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* USERNAME */
+  [data-owner="1"] #list_surround:after {
+    content: 'HorizonX';}
+
+/* USERNAME STYLES */
+  [data-owner=""] #mal_cs_otherlinks div:first-child a, #list_surround:after {
+    position: fixed;
+    bottom: 5%; left: 5%;
+    font: bold 110px Montserrat !important;
+    color: white !important;
+    margin: 0;
+    text-transform: none !important;
+    transition: .3s all ease-in-out;}
+
+/* USERNAME ON HOVER */
+  [data-owner=""] #mal_cs_otherlinks div:first-child a:hover {
+    color: transparent !important;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* ALL LINKS | AIRING/REWATCHING STATUS ON HOVER */
+  a, a:visited, a:active, tr:hover a + small {
+    color: #999;
+    text-decoration: none;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* LIST TABLE */
+  #list_surround {
+    width: 40%;
+    margin: auto;
+    position: relative;
+    left: 22%;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* LIST TABLE ROW */
+  .td1, .td2 {
+    height: 25px;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* STATUS HEADER */
+  .header_title span {
+    font: bold 17px Oswald;
+    color: white;
+    text-transform: uppercase;
+    line-height: 3em;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* ANIME TITLES */
+  .animetitle {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+  @media screen and (min-width: 1600px) {
+  .animetitle {
+    max-width: 85%;}}
+
+  @media screen and (min-width: 1400px) and (max-width: 1550px) {
+  .animetitle {
+    max-width: 330px;}}
+
+  @media screen and (min-width: 1200px) and (max-width: 1350px) {
+  .animetitle {
+    max-width: 250px;}}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* TITLE BACKGROUND ON HOVER */
+  [class^=td]:first-child:before {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 22px;
+    background: #eee;
+    position: absolute;
+    margin-top: -3px;
+    z-index: -1;
+    transition: width .2s ease-in-out;}
+
+/* DISPLAYING TITLE BACKGROUND */
+  tr:hover [class^=td]:first-child:before {
+    width: 100%;}
+
+/* NON-LINK TEXT ON HOVER */
+  tr:hover [class^=td], tr:hover .animetitle {
+    color: black;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* AIRING/REWATCHING STATUS */
+  a + small {
+    position: absolute;
+    margin: 0px 5px;
+    font: 10px Oswald;
+    color: #c7dce5;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* EDIT ICON */
+  small .List_LightBox:before {
+    font: 15px FontAwesome;
+    content: '\f141';
+    color: #555;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    position: relative;
+    left: -30px;}
+
+/* DISPLAYING EDIT ICON | DISPLAYING STATIC GLITCH */
+  tr:hover small .List_LightBox:before, table:hover + .hide:after {
+    opacity: 1;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* STATUS MENU */
+  br:first-child + table {
+    position: fixed;
+    left: 0;
+    top: 25%;
+    width: auto;}
+
+/* STATUS LINKS */
+  [class^=status] {
+    display: block;
+    width: auto;
+    font: 13px Oswald;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 10px 0;}
+
+/* LINES IN BETWEEN STATUS LINKS */
+  br:first-child + table:before {
+    content: '';
+    background: 0 0/5px url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVQYlWNgGAX0BWfOnPlPDAYAtQIh38Axla8AAAAASUVORK5CYII=);
+    width: 7px;
+    height: 220px;
+    position: absolute;}
+
+/* LINES BEFORE ALL STATUS LINKS */
+  [class^=status]:before {
+    content: '—';
+    font-size: 17px;
+    color: #777;
+    margin-right: 3px;
+    position: relative;
+    z-index: 1;}
+
+/* LINE BEFORE SELECTED STATUS LINK */
+  .status_selected:before {
+    content: '——';}
+
+/* STATUS LINKS ON HOVER */
+  .status_selected:before, .status_not_selected:hover:before, .status_not_selected a:hover {
+    color: #eee;}
+
+/* SELECTED STATUS LINK | MENU LINKS ON HOVER */
+  .status_selected a, #mal_control_strip a:hover {
+    color: white !important;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* NAVIGATION MENU */
+  #mal_control_strip {
+    position: fixed;
+    background: none !important;
+    left: unset !important;
+    top: 15px;
+    right: 15px;
+    width: auto !important;
+    height: 13px !important;
+    overflow: hidden;
+    display: block;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    text-align: right;}
+
+/* MENU LABEL */
+  [data-owner="1"] #mal_control_strip:before {
+    content: 'MENU';
+    font: 10px Oswald;}
+
+/* DISPLAYING MENU LINKS */
+  #mal_control_strip:hover {
+    height: 190px !important;}
+
+/* MENU SECTIONS */
+  #mal_control_strip td,
+  #mal_control_strip td div {
+    display: inline;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0;
+    text-align: right;}
+
+/* MENU LINKS */
+  #mal_control_strip a {
+    display: block;
+    font: 10px Oswald !important;
+    color: #999 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    margin: 3px 0;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* ANIME COVERS */
+  .hide {
+    display: block !important;
+    background-size: 150px 100%;
+    background-position: center;
+    position: absolute;
+    left: -170px;
+    margin-top: -50px;
+    width: 150px;
+    height: 200px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s ease-in-out;}
+
+/* STATIC GLITCH EFFECT ON COVERS */
+  .hide:after {
+    transition: all .5s ease-in-out;
+    content: '';
+    mix-blend-mode: exclusion;
+    position: absolute;
+    left: -0px;
+    margin-top: 0px;
+    width: 150px;
+    height: 200px;
+    opacity: 0;
+    background: center/cover url(https://media.tenor.com/images/320f72da506c45cda6cf39700daf339a/tenor.gif);}
+
+/* DISPLAYING COVERS */
+  table:hover + .hide {
+    opacity: .75}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* REVIEW/COMMENT POSITION */
+  [width='125'] {
+    position: absolute;
+    width: 16px;
+    margin-left: -190px;}
+
+  /* REVIEW/COMMENT ON HOVER */
+  [id^=tagRow] {
+    display: block !important;
+    width: 140px;
+    height: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,.8);
+    color: #eee;
+    font: 10px Roboto Mono;
+    line-height: 1.25em;
+    box-shadow: 0 0 4px rgba(0,0,0,.4);
+    transition: all .1s ease-in-out;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    z-index: 1;}
+
+/* REVIEW/COMMENT ICON */
+  [id^=tagLinks]:not(:empty):before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: center/cover url(https://cdn.iconscout.com/icon/free/png-256/comment-37-444617.png);
+    margin-top: 5px;}
+
+/* DISPLAYING REVIEW/COMMENTS */
+  [id^=tagLinks]:hover + [id^=tagRow], [id^=tagRow]:hover {
+    width: 140px;
+    height: auto;
+    padding: 10px;
+    border: 1px dotted #999;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* LIFELINE GIF */
+  #inlineContent {
+    display: block !important;
+    width: 450px;
+    height: 120px;
+    background-image: url(https://thumbs.gfycat.com/RemorsefulUnsteadyCrossbill-size_restricted.gif);
+    background-position: right center;
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
+    left: -60px;
+    mix-blend-mode: lighten;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* HIDING TEXT */
+  #mal_cs_powered, [data-owner=""] #mal_control_strip td:not(#mal_cs_otherlinks),
+  [data-owner=""] #mal_cs_otherlinks div:last-child, [data-owner=""] [class^=td] div[style], small [onClick],
+  .table_header[width='125'], [id^=tagChangeRow], [id^=tagLinks] a, #grand_totals {
+    display: none !important;}
+
+  #mal_cs_otherlinks div:first-child, div[style] small, [id^=tagLinks] {
+    font-size: 0;}
+
+  [data-owner=""] #mal_control_strip td {
+    height: 0;}
+
+  .category_totals {
+    visibility: hidden;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* COPYRIGHT */
+  #copyright {
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: .4;}
