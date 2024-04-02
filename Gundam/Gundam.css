@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 List design by 5cm
 Last update: 2024-Apr-01
 */
@@ -172,7 +172,7 @@ Last update: 2024-Apr-01
 
 /* LINES BEFORE ALL STATUS LINKS */
   [class^=status]:before {
-    content: '—';
+    content: 'â€”';
     font-size: 17px;
     color: #777;
     margin-right: 3px;
@@ -181,7 +181,7 @@ Last update: 2024-Apr-01
 
 /* LINE BEFORE SELECTED STATUS LINK */
   .status_selected:before {
-    content: '——';}
+    content: 'â€”â€”';}
 
 /* STATUS LINKS ON HOVER */
   .status_selected:before, .status_not_selected:hover:before, .status_not_selected a:hover {
